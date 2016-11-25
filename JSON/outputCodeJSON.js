@@ -1870,7 +1870,7 @@ var codeExport =
   },
   {
     "path": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
-    "code": "\"package coffee;\n\nimport dagger.Lazy;\nimport javax.inject.Inject;\nimport java.io.IOException;\n\nclass CoffeeMaker {\n  private final Lazy\u003cHeater\u003e heater; // Create a possibly costly heater only when we use it.\n  private final Pump pump;\n\n  @Inject CoffeeMaker(Lazy\u003cHeater\u003e heater, Pump pump) {\n    this.heater \u003d heater;\n    this.pump \u003d pump;\n  }\n\n  public void brew() {\n    heater.get().on();\n    pump.pump();\n    System.out.println(\" [_]P coffee! [_]P \");\n    heater.get().off();\n  }\n}\n\""
+    "code": "\"package coffee;\n\nimport dagger.Lazy;\nimport javax.inject.Inject;\n\nclass CoffeeMaker {\n  private final Lazy\u003cHeater\u003e heater; // Create a possibly costly heater only when we use it.\n  private final Pump pump;\n\n  @Inject CoffeeMaker(Lazy\u003cHeater\u003e heater, Pump pump) {\n    this.heater \u003d heater;\n    this.pump \u003d pump;\n  }\n\n  public void brew() {\n    heater.get().on();\n    pump.pump();\n    System.out.println(\" [_]P coffee! [_]P \");\n    heater.get().off();\n  }\n}\n\""
   },
   {
     "path": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\DripCoffeeModule.java",

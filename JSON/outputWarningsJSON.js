@@ -1,4 +1,4 @@
-var inputData =
+var inputData = 
 [
   {
     "classes": [],
@@ -71753,34 +71753,13 @@ var inputData =
         "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
         "warningList": [
           {
-            "ruleSet": "Import Statements",
-            "method": "",
-            "packageName": "coffee",
-            "classification": "Code Structure",
-            "fileName": "CoffeeMaker.java",
-            "type": "PMD",
-            "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
-            "ruleName": "UnusedImports",
-            "message": "\nAvoid unused imports such as \u0027java.io.IOException\u0027\n",
-            "line": 5
-          },
-          {
-            "classification": "Code Structure",
-            "fileName": "CoffeeMaker.java",
-            "type": "CheckStyle",
-            "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
-            "ruleName": "UnusedImports",
-            "message": "Unused import - java.io.IOException.",
-            "line": 5
-          },
-          {
             "classification": "Documentation Conventions",
             "fileName": "CoffeeMaker.java",
             "type": "CheckStyle",
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "JavadocType",
             "message": "Missing a Javadoc comment.",
-            "line": 7
+            "line": 6
           },
           {
             "classification": "Metric",
@@ -71789,7 +71768,16 @@ var inputData =
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "LineLength",
             "message": "Line is longer than 80 characters (found 92).",
-            "line": 8
+            "line": 7
+          },
+          {
+            "classification": "Documentation Conventions",
+            "fileName": "CoffeeMaker.java",
+            "type": "CheckStyle",
+            "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
+            "ruleName": "JavadocVariable",
+            "message": "Missing a Javadoc comment.",
+            "line": 7
           },
           {
             "classification": "Documentation Conventions",
@@ -71799,15 +71787,6 @@ var inputData =
             "ruleName": "JavadocVariable",
             "message": "Missing a Javadoc comment.",
             "line": 8
-          },
-          {
-            "classification": "Documentation Conventions",
-            "fileName": "CoffeeMaker.java",
-            "type": "CheckStyle",
-            "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
-            "ruleName": "JavadocVariable",
-            "message": "Missing a Javadoc comment.",
-            "line": 9
           },
           {
             "classification": "Documentation Conventions",
@@ -71816,7 +71795,7 @@ var inputData =
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "JavadocMethod",
             "message": "Missing a Javadoc comment.",
-            "line": 11
+            "line": 10
           },
           {
             "classification": "Best Practices",
@@ -71825,7 +71804,7 @@ var inputData =
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "FinalParameters",
             "message": "Parameter heater should be final.",
-            "line": 11
+            "line": 10
           },
           {
             "classification": "Logic",
@@ -71834,7 +71813,7 @@ var inputData =
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "HiddenField",
             "message": "heater hides a field.",
-            "line": 11
+            "line": 10
           },
           {
             "classification": "Best Practices",
@@ -71843,7 +71822,7 @@ var inputData =
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "FinalParameters",
             "message": "Parameter pump should be final.",
-            "line": 11
+            "line": 10
           },
           {
             "classification": "Logic",
@@ -71852,7 +71831,7 @@ var inputData =
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "HiddenField",
             "message": "pump hides a field.",
-            "line": 11
+            "line": 10
           },
           {
             "classification": "Documentation Conventions",
@@ -71861,18 +71840,17 @@ var inputData =
             "filePath": "C:\\Users\\clint\\Documents\\dagger\\examples\\simple\\src\\main\\java\\coffee\\CoffeeMaker.java",
             "ruleName": "JavadocMethod",
             "message": "Missing a Javadoc comment.",
-            "line": 16
+            "line": 15
           }
         ],
         "loc": 15,
         "packageName": "coffee",
-        "numberOfWarnings": 12,
+        "numberOfWarnings": 10,
         "warningTypes": [
-          "PMD",
           "CheckStyle"
         ],
-        "numberOfCheckStyleWarnings": 11,
-        "numberOfPMDWarnings": 1,
+        "numberOfCheckStyleWarnings": 10,
+        "numberOfPMDWarnings": 0,
         "numberOfFindBugsWarnings": 0
       },
       {
@@ -72097,13 +72075,12 @@ var inputData =
     ],
     "numberOfClasses": 8,
     "packageName": "coffee",
-    "numberOfWarnings": 37,
+    "numberOfWarnings": 35,
     "warningTypes": [
-      "PMD",
       "CheckStyle"
     ],
-    "numberOfCheckStyleWarnings": 36,
-    "numberOfPMDWarnings": 1,
+    "numberOfCheckStyleWarnings": 35,
+    "numberOfPMDWarnings": 0,
     "numberOfFindBugsWarnings": 0
   },
   {
