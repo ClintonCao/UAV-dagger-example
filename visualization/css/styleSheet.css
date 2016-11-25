@@ -1,0 +1,361 @@
+/*
+ * General styling
+ */
+*{font-family:Tahoma, Geneva, sans-serif;margin:0;padding:0;}
+.quick .toggle-group { transition: none; -webkit-transition: none; }
+
+body{
+	margin:0;
+	background:url(../images/bg2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;width:100%;
+  	overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+.UIText {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 
+ * Option menu right
+ */
+div#menu-right-wrapper{
+  width: 320px;
+  float: right;
+  margin-right: 15px;
+  background: rgba(55, 58, 60, 0.8);
+}
+div#right-menu{
+  padding: 0 0 20px 20px;
+  margin: 0 10px 0 0;
+  opacity:0.8;
+  color: #fff;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+/* 
+ * Option menu left
+ */
+div#left-wrapper{
+  float: left;
+  margin-left: 15px;
+  width: 270px;
+}
+div#menu-left-wrapper{
+  float: left;
+  width: 270px;
+  background: rgba(55, 58, 60, 0.85);
+}
+div#extra-info-left-wrapper{
+  float: left;
+  margin-top: 15px;
+  width: 270px;
+  background: rgba(55, 58, 60, 0.8);
+}
+div#extra-info-div{
+	color:#FFF;
+	padding:20px;
+	display:none;
+	font-size:16px;
+}
+div#extra-info-left{
+  height:400px;
+  float: left;
+  margin-left: 20px;
+  width: 270px;
+  background: rgba(55, 58, 60, 0.8);
+}
+div#left-menu{
+  padding: 0 0 20px 20px;
+  margin: 0 20px 0 0;
+  opacity:0.8;
+  color: #fff;
+  font-family: 'Roboto Mono', sans-serif;
+}
+div#back-div{
+  width:100%;
+  height:30px;
+  border-bottom:#FFF 2px solid;
+  background: #337ab7;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 700;
+  padding-left:5px;
+  font-size: 16px;
+}
+div#back-div:hover {
+  background: #2d6da4;
+}
+#checkStyleLabel {
+  color: #FFFFFF;
+  font-weight: 200px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+#PMDLabel {
+  color: #FFFFFF;
+  font-weight: 200px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+#FindBugsLabel {
+  color: #FFFFFF;
+  font-weight: 200px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+#maintainabilityDefectsLabel{
+  color: #FFFFFF;
+  font-weight: 200px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+#functionalDefectsLabel{
+  color: #FFFFFF;
+  font-weight: 200px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+#otherLabel{
+  color: #FFFFFF;
+  font-weight: 200px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+#currentLocation {
+  font-weight: bold;
+  color:#339df9;
+}
+
+/* 
+ * Styling for the chart
+ */
+div#chart-and-code {
+  position: relative;
+}
+div#chart {
+  margin-left:30px;
+  margin-right:30px;
+  margin-bottom:30px;
+}
+svg{	
+  border:#FFF 2px solid;
+}
+div#code-div{
+  margin-right:30px;
+  margin-left:30px;
+  border:#FFF 3px solid;
+  visibility:hidden;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.CodeMirror-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.CodeMirror-hscrollbar {
+  display: none !important;
+}
+.CodeMirror-vscrollbar {
+  display: none !important;
+}
+div#chart-wrapper{
+  margin: 0 20px 0 20px;
+  float:left;
+  padding-bottom: 40px;
+  background: rgba(55, 58, 60, 0.8);
+}
+
+/* Different menus for options */
+.optionsMenuRight{
+  float:right;
+  display:block;
+  background-color:#7a92ff;
+  width:250px;
+  margin: 0px 10px 15px 10px;
+  padding: 0 0 0px 0px;
+  border-style: ridge;
+}
+.optionsMenuBottom{
+  background-color:#7a92ff;
+  width:1000px;
+}
+#FunctionDefects-menu {
+  float:left;
+  background-color:#7a92ff;
+  margin-right: 50px;
+}
+#MaintainabilityDefects-menu {
+  float:left;
+  background-color:#7a92ff;
+  margin-right: 50px;
+}
+#StyleConventions-menu {
+  background-color:#7a92ff;
+  float:left;
+}
+
+/*
+ * Styling for the tooltip of the treemap
+ */
+#d3-tip{
+	font-size:15px;
+  color: #fff;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 100;
+  padding: 10px;
+  background-color: rgba(55, 58, 60, 0.75);
+}
+
+/*
+ * Styling for the tooltip of the treemap
+ */
+.d3-tip2{
+  font-size:15px;
+  color: #FFFFFF !important;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 100;
+  padding: 10px;
+  background-color: rgba(55, 58, 60, 0.9);
+}
+
+/* Title */
+#main-title {
+  background: rgba(55, 58, 60, 0.8);
+  opacity:0.8;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFF;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 300;
+}
+
+/* Back button */
+.back-button{
+  border: none;
+  color: white;
+  width: 100%;
+  color: #000;
+  height: 25px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.back-button:hover {
+  background: #b3c1fe;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+text {
+  pointer-events: none;
+}
+label.pointer{
+	cursor:pointer;
+}
+.grandparent text {
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+}
+.grandparent rect {
+  stroke-width: 2px;
+  fill: #337ab7;
+  display: none;
+}
+
+.grandparent:hover rect {
+  fill: #6c98bf;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+.children:hover rect.child {
+  fill: rgba(255,255,255, 0.4);
+  cursor: pointer !important;
+}
+g.children:hover{
+  stroke-width: 0.4px;
+  stroke: #000000;
+  cursor: pointer;
+}
+
+.child:hover {
+  cursor: pointer !important;
+}
+
+#current-path {
+  color: #FFFFFF;
+  cursor:pointer;
+  text-align: center;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 300;
+  padding-bottom: -25px;
+  margin:8px;
+}
+
+span.path-span:hover{
+  color:#CCC;
+}
+
+/*
+ * Styling elements in the graph
+ */
+fam.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.link {
+  stroke: #000;
+  stroke-opacity: .25;
+}
+
+h4.category-titles{
+	padding: 0;
+	margin:20px 0 10px 0;
+	cursor: pointer;
+}
+
+/* Name of a node */
+.ptext {
+	text-align:center;
+	font-size:18px;
+  font-weight: 100;
+}
+.ctext {
+  font-weight: 100;
+}
+
+/* Various buttons styling */
+.radioButton{
+	margin-top:10px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+.buttonText{
+  display: inline-block;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 400;
+	size:15px;
+  height:10px;
+}
+#relativeLabel{
+  display: inline-block;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 400;
+  size:15px;
+  height:10px;
+  padding-left: 7.5px;
+}
