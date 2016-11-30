@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
-   <head>
+  <head>
       <!-- Style for the UI -->
-      <link rel="stylesheet" type="text/css" href="css/styleSheetHome.css">
+      <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+      <!-- Style for all elements which will be showed on hover -->
+      <link rel="stylesheet" type="text/css" href="css/showHover.css">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- Optional theme -->
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <!-- Latest compiled and minified JavaScript -->
       <link href="css/bootstrap-toggle.min.css" rel="stylesheet">
+      <!-- Imports Google fonts for more awesome UI -->
+      <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,700' rel='stylesheet' type='text/css'>
 
+      <title>Unified ASAT Visualizer</title>
       <meta charset="utf-8">
-      <title>Visualization of different ASATs</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
 
    <body>
-      <nav id="main-title"  class="navbar navbar-dark bg-inverse">
-         <!-- Here comes the main title, this is set in mainDriver.js -->
+      <nav id="main-title"  class="navbar navbar-dark bg-inverse text-center">
+        <div style= "font-size: 30pt; color: white">
+           Unified ASAT Visualizer
+        </div>
       </nav>
-      <span id="main-title-hover">
-      <a class="white_text" href="dagger.html">Project 1</a>
-      <a class="white_text" href="dagger.html">Project 2</a>
-      <a class="white_text" href="dagger.html">Project 3</a>
-      <a class="white_text" href="/video/scene1.mp4">Video 3</a>
-      <a class="white_text" href="https://github.com/ClintonCao/UnifiedASATVisualizer">Tool on Github</a>
-      </span>
-      <div id="wrapper">
-       	  
+
+      <div class="container">
+         <div class="row">
+            <div class="uav">
+               <a class="white_text" href="dagger.html">UAV</a>
+            </div>
+            <div class="dagger">
+               <a class="white_text" href="dagger.html">Google/dagger</a>
+            </div>
+            <div class="curator">
+               <a class="white_text" href="dagger.html">Netflix/curator</a>
+            </div>
+            <div class="video">
+                 <a class="white_text" href="/video/scene1.mp4">Video demo</a>
+            </div>
+            <div class="toolgit">
+              <a class="white_text" href="https://github.com/ClintonCao/UnifiedASATVisualizer">Tool on Github</a>
+            </div>
+         </div>
       </div>
 
 </body>
