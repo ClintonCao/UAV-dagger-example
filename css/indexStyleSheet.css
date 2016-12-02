@@ -1,0 +1,76 @@
+/*
+ * General styling
+ */
+*{font-family:Tahoma, Geneva, sans-serif;margin:0;padding:0;}
+.quick .toggle-group { transition: none; -webkit-transition: none; }
+
+body{
+	margin:0 auto;
+	background:url(../images/bg2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;width:100%;
+	overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  margin:0 auto;
+}
+
+.UIText {
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+	background-color: rgba(55, 58, 60, 0.8);
+	margin: 50px;
+}
+
+h2 {
+	text-align: center;
+	color: white !important;
+}
+
+.section-heading-spacer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+.thumb-image{
+	width: 300px;
+	max-height: 300px;
+}
+
+.thumbnail {
+	margin-left: 25px !important;
+	margin-right: 25px !important;
+	background-color: transparent;
+	border: none !important;
+	box-shadow: none !important;
+	width: 300px;
+	max-height: 300px;
+}
+.caption {
+	text-align: center;
+	font-family: "Roboto Mono", sans-serif;
+	color: #339df9;
+	text-decoration: none !important;
+
+}
+
+.linkToDagger{
+ text-decoration: none !important;
+}
+
+/* Title */
+#main-title {
+  background: rgba(55, 58, 60, 0.8);
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white !important;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 300;
+}

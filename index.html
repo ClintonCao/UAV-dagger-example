@@ -2,7 +2,7 @@
 <html>
   <head>
       <!-- Style for the UI -->
-      <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+      <link rel="stylesheet" type="text/css" href="css/indexStyleSheet.css">
       <!-- Style for all elements which will be showed on hover -->
       <link rel="stylesheet" type="text/css" href="css/showHover.css">
       <!-- Latest compiled and minified CSS -->
@@ -26,25 +26,90 @@
         </div>
       </nav>
 
-      <div class="container">
-         <div class="row">
-            <div class="uav">
-               <a class="white_text" href="dagger.html">UAV</a>
-            </div>
-            <div class="dagger">
-               <a class="white_text" href="dagger.html">Google/dagger</a>
-            </div>
-            <div class="curator">
-               <a class="white_text" href="dagger.html">Netflix/curator</a>
-            </div>
-            <div class="video">
-                 <a class="white_text" href="/video/scene1.mp4">Video demo</a>
-            </div>
-            <div class="toolgit">
-              <a class="white_text" href="https://github.com/ClintonCao/UnifiedASATVisualizer">Tool on Github</a>
-            </div>
-         </div>
+
+   <div class="container">
+
+     <h2>Example Visualizations<h2>
+
+    <div class="row">
+      <div class="column">
+        <div class="col-sm-6 col-md-4">
+
+            <a href="dagger.html" class="linkToDagger">
+          <div class="caption">
+            <h3>google/dagger</h3>
+          </div>
+          <div class="thumbnail">
+            <img src="images/daggerThumb.jpg" alt="dagger" class="thumb-image">
+
+          </div>
+          </a>
+        </div>
       </div>
+
+        <div class="column">
+          <div class="col-sm-6 col-md-4">
+            <div class="caption">
+              <h3>google/curator</h3>
+            </div>
+            <div class="thumbnail">
+              <a href="curator.html" class="linkTocurator">
+              <img src="images/curatorThumb.jpg" alt="curator"  class="thumb-image">
+            </a>
+            </div>
+          </div>
+        </div>
+
+          <div class="column">
+            <div class="col-sm-6 col-md-4">
+              <div class="caption">
+                <h3>UAV</h3>
+              </div>
+              <div class="thumbnail">
+                <a href="uav.html" class="linkToUAV">
+                <img src="images/uavThumb.jpg" alt="uav"  class="thumb-image">
+              </a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row2">
+      <div class="column">
+        <div class="col-sm-6 col-md-4">
+          <div class="caption">
+            <h3>UAV Video Demo</h3>
+          </div>
+          <div class="thumbnail">
+            <a href="#" class="linkToVideo">
+            <img src="images/vidThumb.jpg" alt="video" class="thumb-image">
+          </a>
+          </div>
+        </div>
+      </div>
+
+        <div class="column">
+          <div class="col-sm-6 col-md-4">
+            <div class="caption">
+              <h3>UAV Source Code</h3>
+            </div>
+            <div class="thumbnail">
+              <a href="https://github.com/ClintonCao/UnifiedASATVisualizer" class="linkToRepo">
+              <img src="images/repoThumb.jpg" alt="repository" class="thumb-image">
+            </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+  <script src="jQuery/jquery-1.12.3.min.js"></script>
+  <script src="Bootstrap/bootstrap.min.js"></script>
+  <script src="helperJSFiles/handleThumbnailHandler.js"></script>
 
 </body>
 

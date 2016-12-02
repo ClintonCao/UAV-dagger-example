@@ -23,12 +23,12 @@ if(!detectIE()) {
  * Will set all available checkboxes on checked
  */
 function setAllCheckboxesOnDefault() {
-	$(".updateContent").prop('checked', false); 
+	$(".updateContent").prop('checked', false);
 	$("#treemapButton").prop('checked', true);
 	$("#normalButton").prop('checked', true);
 	$(".DefectCategory").prop('checked', true);
  	$("#relativeButton").prop('checked', true);
-	
+
 	$(".FunctionalDefects").click();
 	$(".MaintainabilityDefects").click();
 	$(".StyleConventions").click();
@@ -60,7 +60,7 @@ function detectIE() {
     // Edge (IE 12+) => return version number
     return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
   }
-  
+
    var firefox = ua.indexOf('Firefox/');
    if (firefox > 0) {
     return true;
@@ -70,7 +70,7 @@ function detectIE() {
 }
 function detectFirefox(){
   var ua = window.navigator.userAgent;
-	
+
   var firefox = ua.indexOf('Firefox/');
   if (firefox > 0) {
     return true;
