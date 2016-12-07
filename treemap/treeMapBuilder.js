@@ -107,7 +107,7 @@ var treeMapBuilder = (function() {
         }
         return node;
     }
-	
+
 	// reload the content by reloading all the json and calculation the values agian.
     function reloadContent() {
         var packages = filterTypeRuleName(acceptedTypes, acceptedCategories);
@@ -126,8 +126,8 @@ var treeMapBuilder = (function() {
                 }
             }
             return null;
-    }	
-	 
+    }
+
     //Renders the chart with given depth and children
 	function display(d) {
 		var id = 0;
@@ -136,7 +136,7 @@ var treeMapBuilder = (function() {
         var g = g1.selectAll("g").data(d._children).enter().append("g");
 
 		var tooltip = d3.select("#chart-and-code").append("div").attr("class","d3-tip2").style("width", 300).style("position", "absolute").style("z-index", "10").style("visibility", "hidden");
-		
+
         // on click square to go more in depth
         g.filter(function(d) { return d._children; })
             .classed("children", true)
@@ -206,7 +206,7 @@ var treeMapBuilder = (function() {
             var newNode = findNode(currentNodePath, root);
             transition(newNode);
         }
-        
+
         // Updates all warning counts for all ASATS and categories
         updateWarningsCountInUI(d);
 
@@ -259,9 +259,10 @@ var treeMapBuilder = (function() {
         t.append("tspan").attr("dy", "1.2em").text(function(d) { return d.warnings; }).style("fill", function(d) { return colours.white(); });
         t.call(text);
 
-       
+
         // pushes the clicked node to the array and then shows the node
         function navigationDown(d) {
+            tooltip.style("visibility", "hidden");
             currentNodePath.push(findChildNumber(d, d.parent));
             transition(d)
         }
@@ -322,7 +323,7 @@ var treeMapBuilder = (function() {
             sourceCodeLevel = false;
             document.getElementById('normalColourLabel2').style.textDecoration = 'none';
             document.getElementById('normalColourLabel2').style.cursor = 'pointer';
-            
+
             if ( document.getElementById("asatButton").checked ){
                 $("#asatButton").click();
             } else if ( document.getElementById("categoryButton").checked ){
@@ -330,7 +331,7 @@ var treeMapBuilder = (function() {
             }
 
 			var index = parseInt(indexString.substring(indexString.length-2,indexString.length-1));
-			
+
 			while (currentNodePath.length > index) { currentNodePath.pop(); }
 			var d = findNode(currentNodePath, root);
 			if(fromSourceCode) { sourceCode.hide(); } else { display(d); }
@@ -494,7 +495,7 @@ var treeMapBuilder = (function() {
         getSourceCodeLevel: function() {
             return sourceCodeLevel;
         },
-        
+
         /**
          * Returns the local string 'currentClassName'
          */
