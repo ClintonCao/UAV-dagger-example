@@ -10,6 +10,7 @@ if(!detectIE()) {
 	runTreeMap();
 	addAllAcceptedTypesAndCategories();
 	setAllCheckboxesOnDefault();
+	setMaxHeightSideMenus();
 	if(detectFirefox()){
 		$("#svg").css({ "border-width":"0px"});
 	}
@@ -23,12 +24,12 @@ if(!detectIE()) {
  * Will set all available checkboxes on checked
  */
 function setAllCheckboxesOnDefault() {
-	$(".updateContent").prop('checked', false);
+	$(".updateContent").prop('checked', false); 
 	$("#treemapButton").prop('checked', true);
 	$("#normalButton").prop('checked', true);
 	$(".DefectCategory").prop('checked', true);
  	$("#relativeButton").prop('checked', true);
-
+	
 	$(".FunctionalDefects").click();
 	$(".MaintainabilityDefects").click();
 	$(".StyleConventions").click();
@@ -60,7 +61,7 @@ function detectIE() {
     // Edge (IE 12+) => return version number
     return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
   }
-
+  
    var firefox = ua.indexOf('Firefox/');
    if (firefox > 0) {
     return true;
@@ -70,7 +71,7 @@ function detectIE() {
 }
 function detectFirefox(){
   var ua = window.navigator.userAgent;
-
+	
   var firefox = ua.indexOf('Firefox/');
   if (firefox > 0) {
     return true;
@@ -127,4 +128,19 @@ function runTreeMap() {
         fileName: projectName,
         values: finalJson
     });
+}
+
+/**
+* For small screen resolutions the left and right wrapper have a max height.
+* In this case the user can scroll in the div. (overflow-y: scroll)
+*/
+function setMaxHeightSideMenus(){
+	if ($('#menu-right-wrapper').height() >  window.innerHeight - 130){
+    	$('#menu-right-wrapper').css('max-height', window.innerHeight - 130);
+    	$('#menu-right-wrapper').css('overflow-y', 'scroll');
+	}
+	if ($('#left-wrapper').height() >  window.innerHeight - 130){
+        $('#left-wrapper').css('max-height', window.innerHeight - 130);
+    	$('#left-wrapper').css('overflow-y', 'scroll');
+	}
 }
